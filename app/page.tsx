@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { MinutaLogo } from '@/components/MinutaLogo'
+import { FAQSection } from '@/components/FAQSection'
 
 const ROTATING_WORDS = [
   'bostadsrättsföreningar',
@@ -552,6 +553,9 @@ export default function LandingPage() {
           </ul>
         </div>
       </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────── */}
+      <FAQSection />
 
       {/* ── SIGNUP ─────────────────────────────────────────────── */}
       <section id="signup" style={{ backgroundColor: '#F6F3EE', padding: '96px 24px' }}>

@@ -1,0 +1,63 @@
+# Minuta
+
+> AI-drivet verktyg för automatiserade mötesprotokoll för svenska föreningar.
+
+Minuta låter dig spela in ett styrelsemöte i webbläsaren. AI transkriberar inspelningen
+på svenska och genererar ett juridiskt korrekt beslutsprotokoll enligt EFL (Lagen om
+ekonomiska föreningar, 2018:672) på under 1 minut. Protokollet signeras med BankID och
+kan exporteras till PDF eller Word.
+
+## Vad gör Minuta?
+
+1. Spela in mötet direkt i webbläsaren — ingen app att ladda ner
+2. AI transkriberar inspelningen på svenska
+3. Minuta genererar ett juridiskt korrekt beslutsprotokoll automatiskt
+4. Alla berörda signerar digitalt med BankID
+5. Exportera protokollet till PDF eller Word
+
+## Målgrupp
+
+- Bostadsrättsföreningar (BRF) — Sveriges ~30 000 BRF:er
+- Idrottsföreningar
+- Ekonomiska föreningar
+- Ideella föreningar
+
+## Nyckelfördelar
+
+- Juridiskt korrekt format enligt EFL (Lagen om ekonomiska föreningar, 2018:672)
+- All data lagras i Sverige — fullständigt GDPR-säkert
+- BankID-signering — juridiskt bindande digital underskrift
+- Under 1 minut från avslutat möte till färdigt protokoll
+- 88% kortare tid från möte till utskickat protokoll
+- Export till PDF och Word
+
+## Teknisk information
+
+- Webbaserat — fungerar i alla moderna webbläsare
+- AI-transkribering via Deepgram (EU-endpoint, GDPR)
+- Protokollgenerering via Azure OpenAI (Sweden Central, GDPR)
+- Databas: Supabase (EU-servrar)
+
+## Kontakt & mer information
+
+- Webbplats: https://minuta.se
+- Plats: Stockholm, Sverige
+- Grundat: 2026
+
+## Vanliga frågor
+
+**Vad är ett AI-drivet mötesprotokoll?**
+Ett beslutsprotokoll som genereras automatiskt av AI utifrån en inspelning av ett styrelsemöte.
+
+**Hur lång tid tar det?**
+Under 1 minut från avslutat möte till färdigt protokoll. Traditionellt tar det dagar.
+
+**Är det GDPR-säkert?**
+Ja. All data lagras i Sverige och lämnar aldrig landet.
+
+**Vilka föreningar passar Minuta för?**
+BRF, idrottsföreningar, ekonomiska föreningar och ideella föreningar i Sverige.
+
+**Vad krävs juridiskt i ett BRF-styrelseprotokoll?**
+Enligt EFL: datum, plats, deltagare, ordförande, sekreterare, dagordning, beslut och
+underskrifter av protokollförare och justeringsman. Minuta genererar allt detta automatiskt.
