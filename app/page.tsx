@@ -342,7 +342,7 @@ export default function LandingPage() {
                   <span className="para-num">§ 2</span> {SCENARIOS[scenarioIndex].heading3}
                 </p>
                 <div className={`mockup-el${mockupEl[6] ? ' show' : ''}`}
-                  style={{ marginLeft: 24, borderLeft: '2px solid #6FC9A8', backgroundColor: '#EDF5F0', borderRadius: '0 6px 6px 0', padding: '9px 14px', height: 58, overflow: 'hidden' }}>
+                  style={{ marginLeft: 24, borderLeft: '2px solid #6FC9A8', backgroundColor: '#EDF5F0', borderRadius: '0 6px 6px 0', padding: '9px 14px', minHeight: 58 }}>
                   <p style={{ fontFamily: 'DM Sans, system-ui, sans-serif', fontSize: 12, color: '#1A3828', margin: 0, lineHeight: 1.65 }}>
                     <span style={{ color: '#6FC9A8', fontWeight: 700, marginRight: 4 }}>BESLUT</span>
                     {typed3}
@@ -361,7 +361,7 @@ export default function LandingPage() {
                   <span className="para-num">§ 3</span> {SCENARIOS[scenarioIndex].heading4}
                 </p>
                 <div className={`mockup-el${mockupEl[8] ? ' show' : ''}`}
-                  style={{ marginLeft: 24, borderLeft: '2px solid #6FC9A8', backgroundColor: '#EDF5F0', borderRadius: '0 6px 6px 0', padding: '9px 14px', height: 58, overflow: 'hidden' }}>
+                  style={{ marginLeft: 24, borderLeft: '2px solid #6FC9A8', backgroundColor: '#EDF5F0', borderRadius: '0 6px 6px 0', padding: '9px 14px', minHeight: 58 }}>
                   <p style={{ fontFamily: 'DM Sans, system-ui, sans-serif', fontSize: 12, color: '#1A3828', margin: 0, lineHeight: 1.65 }}>
                     <span style={{ color: '#6FC9A8', fontWeight: 700, marginRight: 4 }}>BESLUT</span>
                     {typed4}
