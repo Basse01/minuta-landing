@@ -6,12 +6,12 @@ const FAQ_ITEMS = [
   {
     question: 'Vad är ett AI-drivet mötesprotokoll?',
     answer:
-      'Ett AI-drivet mötesprotokoll är ett beslutsprotokoll som genereras automatiskt av artificiell intelligens utifrån en inspelning av ett styrelsemöte. Med Minuta spelar du in mötet i webbläsaren. Minuta transkriberar inspelningen på svenska med hjälp av AI och skapar sedan ett juridiskt korrekt beslutsprotokoll enligt EFL (Lagen om ekonomiska föreningar, 2018:672). Protokollet innehåller alla obligatoriska delar: mötesuppgifter, deltagare, dagordningspunkter och tydliga beslut. Du slipper skriva för hand under mötet och slippar det tunga efterarbetet — AI gör allt det åt dig.',
+      'Ett AI-drivet mötesprotokoll är ett beslutsprotokoll som genereras automatiskt av artificiell intelligens utifrån en inspelning av ett styrelsemöte. Med Minuta spelar du in mötet i webbläsaren. Minuta transkriberar inspelningen på svenska med hjälp av AI och skapar sedan ett juridiskt korrekt beslutsprotokoll enligt EFL (Lagen om ekonomiska föreningar, 2018:672). Protokollet innehåller alla obligatoriska delar: mötesuppgifter, deltagare, dagordningspunkter och tydliga beslut. Du slipper skriva för hand under mötet och slippar det tunga efterarbetet. AI gör allt det åt dig.',
   },
   {
     question: 'Hur lång tid tar det att generera ett mötesprotokoll med Minuta?',
     answer:
-      'Med Minuta tar det under en minut att generera ett färdigt mötesprotokoll efter att mötet är avslutat. Traditionellt tar det dagar från avslutat möte till ett utskickat och signerat protokoll. Minuta kortar den tiden med 88 procent. Du avslutar inspelningen, AI transkriberar och strukturerar mötet automatiskt, och du får ett komplett beslutsprotokoll i klar text. Protokollet kan sedan redigeras, skickas för BankID-signering och exporteras som PDF eller Word — allt i samma verktyg.',
+      'Med Minuta tar det under en minut att generera ett färdigt mötesprotokoll efter att mötet är avslutat. Traditionellt tar det dagar från avslutat möte till ett utskickat och signerat protokoll. Minuta kortar den tiden med 88 procent. Du avslutar inspelningen, AI transkriberar och strukturerar mötet automatiskt, och du får ett komplett beslutsprotokoll i klar text. Protokollet kan sedan redigeras, skickas för BankID-signering och exporteras som PDF eller Word, allt i samma verktyg.',
   },
   {
     question: 'Är Minuta GDPR-säkert?',
@@ -31,7 +31,7 @@ const FAQ_ITEMS = [
   {
     question: 'Hur fungerar BankID-signering i Minuta?',
     answer:
-      'Med Minuta kan alla berörda parter signera mötesprotokoll digitalt med BankID direkt i verktyget. Efter att protokollet är genererat och eventuellt redigerat skickar du ut en signeringslänk till ordförande och justeringsman. De signerar var och en med sitt BankID — mobilt eller på dator. När alla har signerat låses protokollet och sparas med digitala signaturer. Signeringen är juridiskt bindande och likställd med en handskriven underskrift. Du behöver aldrig skriva ut, scanna eller skicka papper.',
+      'Med Minuta kan alla berörda parter signera mötesprotokoll digitalt med BankID direkt i verktyget. Efter att protokollet är genererat och eventuellt redigerat skickar du ut en signeringslänk till ordförande och justeringsman. De signerar var och en med sitt BankID, mobilt eller på dator. När alla har signerat låses protokollet och sparas med digitala signaturer. Signeringen är juridiskt bindande och likställd med en handskriven underskrift. Du behöver aldrig skriva ut, scanna eller skicka papper.',
   },
   {
     question: 'Kan jag exportera protokollet till PDF eller Word?',
