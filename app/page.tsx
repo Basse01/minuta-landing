@@ -554,9 +554,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* ── FAQ ────────────────────────────────────────────────── */}
-      <FAQSection />
-
       {/* ── SIGNUP ─────────────────────────────────────────────── */}
       <section id="signup" style={{ backgroundColor: '#F6F3EE', padding: '96px 24px' }}>
         <div style={{ maxWidth: 520, margin: '0 auto' }}>
@@ -640,6 +637,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* ── FAQ ────────────────────────────────────────────────── */}
+      <FAQSection />
 
       {/* ── FOOTER ─────────────────────────────────────────────── */}
       <footer style={{ backgroundColor: '#1A3828', padding: '40px 24px' }} aria-label="Sidfot">
