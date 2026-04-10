@@ -60,7 +60,7 @@ const SCENARIOS = [
 export default function LandingPage() {
   const [wordIndex, setWordIndex] = useState(0)
   const [wordVisible, setWordVisible] = useState(true)
-  const [cardsVisible, setCardsVisible] = useState([false, false, false])
+  const [cardsVisible, setCardsVisible] = useState([true, true, true])
   const cardsRef = useRef<HTMLDivElement>(null)
 
   // Mockup animation

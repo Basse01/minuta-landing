@@ -83,9 +83,7 @@ body {
 .hero-animate-3 { animation-delay: 0.35s; }
 .hero-animate-4 { animation-delay: 0.45s; }
 
-.card-reveal { transition: opacity 0.5s ease, transform 0.5s ease; }
-.card-reveal.hidden { opacity: 0; transform: translateY(24px); }
-.card-reveal.visible { opacity: 1; transform: translateY(0); }
+.card-reveal { transition: opacity 0.6s ease, transform 0.6s ease; }
 
 .feature-card { border-left: 3px solid transparent; transition: border-color 0.2s ease, transform 0.2s ease; }
 .feature-card:hover { border-left-color: #6FC9A8; transform: translateY(-2px); }
@@ -116,7 +114,8 @@ body {
   .stats-grid > div:last-child { border-bottom: none; }
 
   .days-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
-  .days-arrow { transform: rotate(90deg); margin: -8px 0; }
+  .days-arrow { justify-self: center; }
+  .days-arrow svg { transform: rotate(90deg); }
 
   .varfor-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
 
