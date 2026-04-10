@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /start
+Disallow: /meeting/
+Disallow: /login
+
+Sitemap: https://minuta.se/sitemap.xml
