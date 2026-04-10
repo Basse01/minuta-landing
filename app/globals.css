@@ -52,8 +52,7 @@ body {
   to   { opacity: 1; transform: translateX(0); }
 }
 
-.mockup-section { display: none; }
-@media (min-width: 768px) { .mockup-section { display: block; } }
+.mockup-section { display: block; }
 
 .mockup-el {
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -124,6 +123,8 @@ body {
   .signup-card-bottom { padding: 24px !important; }
 
   .section-padding { padding: 56px 20px !important; }
+
+  .mockup-section { padding: 0 16px 56px !important; }
 
   .footer-inner { flex-direction: column !important; align-items: flex-start !important; gap: 12px !important; }
 }
