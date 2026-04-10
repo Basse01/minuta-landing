@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://minuta.se'),
   title: {
-    default: 'Minuta — Automatiserade mötesprotokoll för föreningar',
+    default: 'Minuta - Automatiserade mötesprotokoll för föreningar',
     template: '%s | Minuta',
   },
   description:
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     locale: 'sv_SE',
     url: 'https://minuta.se',
     siteName: 'Minuta',
-    title: 'Minuta — Automatiserade mötesprotokoll för föreningar',
+    title: 'Minuta - Automatiserade mötesprotokoll för föreningar',
     description:
       'Spela in mötet i webbläsaren. Få ett juridiskt korrekt beslutsprotokoll på under 1 minut. Testad av BRF-styrelser i Stockholm.',
     images: [
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@minutase',
-    title: 'Minuta — Automatiserade mötesprotokoll',
+    title: 'Minuta - Automatiserade mötesprotokoll',
     description: 'Spela in mötet. Få juridiskt korrekt protokoll på under 1 minut.',
     images: ['/opengraph-image'],
   },
