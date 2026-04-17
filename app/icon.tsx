@@ -1,6 +1,5 @@
 import { ImageResponse } from 'next/og'
 
-export const runtime = 'edge'
 export const size = { width: 32, height: 32 }
 export const contentType = 'image/png'
 
@@ -16,10 +15,8 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          position: 'relative',
         }}
       >
-        {/* Document lines */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: 2, paddingLeft: 2 }}>
           <div style={{ width: 16, height: 2, borderRadius: 1, background: '#6FC9A8' }} />
           <div style={{ width: 12, height: 1.5, borderRadius: 1, background: 'rgba(111,201,168,0.55)' }} />

@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Fraunces, DM_Sans } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/Header'
+import { Footer } from '@/components/Footer'
+import { CookieBanner } from '@/components/CookieBanner'
 
 const fraunces = Fraunces({
   subsets: ['latin'],
@@ -17,7 +20,7 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL('https://minuta.se'),
   title: {
-    default: 'Minuta - Automatiserade mötesprotokoll för föreningar',
+    default: 'Minuta — Automatiserade mötesprotokoll för föreningar',
     template: '%s | Minuta',
   },
   description:
@@ -32,6 +35,9 @@ export const metadata: Metadata = {
     'protokollföring',
     'föreningsprotokoll',
     'digitalt mötesprotokoll',
+    'BankID signering protokoll',
+    'GDPR mötesprotokoll',
+    'EFL föreningsprotokoll',
   ],
   authors: [{ name: 'Minuta', url: 'https://minuta.se' }],
   creator: 'Minuta',
@@ -45,7 +51,7 @@ export const metadata: Metadata = {
     locale: 'sv_SE',
     url: 'https://minuta.se',
     siteName: 'Minuta',
-    title: 'Minuta - Automatiserade mötesprotokoll för föreningar',
+    title: 'Minuta — Automatiserade mötesprotokoll för föreningar',
     description:
       'Spela in mötet i webbläsaren. Få ett juridiskt korrekt beslutsprotokoll på under 1 minut. Testad av BRF-styrelser i Stockholm.',
     images: [
@@ -60,7 +66,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@minutase',
-    title: 'Minuta - Automatiserade mötesprotokoll',
+    title: 'Minuta — Automatiserade mötesprotokoll',
     description: 'Spela in mötet. Få juridiskt korrekt protokoll på under 1 minut.',
     images: ['/opengraph-image'],
   },
@@ -75,9 +81,19 @@ export const metadata: Metadata = {
     },
   },
   category: 'technology',
+  verification: {
+    google: 'ERSÄTT_MED_DIN_GSC_KOD', // Hämta från: search.google.com/search-console → HTML tag-metoden
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-icon',
+  },
 }
 
-const faqItems = [
+export const faqItems = [
   {
     question: 'Vad är ett AI-drivet mötesprotokoll?',
     answer:
@@ -129,17 +145,20 @@ const jsonLd = {
       operatingSystem: 'Web',
       featureList: [
         'AI-transkribering på svenska',
-        'BankID-signering',
-        'GDPR-säkert — all data i Sverige',
-        'Juridiskt korrekt format enligt EFL',
+        'Automatisk dagordning och kallelse',
+        'BankID-signering (juridiskt bindande enligt eIDAS)',
+        'GDPR-säkert — all data lagras i Sverige',
+        'Juridiskt korrekt format enligt EFL 2018:672',
         'Export till PDF och Word',
         'Beslutsprotokoll på under 1 minut',
+        'Sökbart protokollarkiv',
       ],
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'SEK',
-        description: 'Gratis för de 100 första föreningarna',
+        description: 'Gratis för de 100 första föreningarna — 3 månader utan kostnad',
+        availability: 'https://schema.org/LimitedAvailability',
       },
       audience: {
         '@type': 'Audience',
@@ -155,23 +174,12 @@ const jsonLd = {
       },
     },
     {
-      '@type': 'FAQPage',
-      '@id': 'https://minuta.se/#faq',
-      mainEntity: faqItems.map(({ question, answer }) => ({
-        '@type': 'Question',
-        name: question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: answer,
-        },
-      })),
-    },
-    {
       '@type': 'Organization',
       '@id': 'https://minuta.se/#org',
       name: 'Minuta',
       url: 'https://minuta.se',
-      description: 'Automatiserade mötesprotokoll för svenska föreningar.',
+      description:
+        'Minuta bygger verktyg som gör möteshanteringen enklare för Sveriges föreningar — från dagordning till signerat protokoll.',
       foundingLocation: {
         '@type': 'Place',
         addressLocality: 'Stockholm',
@@ -185,16 +193,24 @@ const jsonLd = {
         'Mötesprotokoll',
         'Bostadsrättsföreningar',
         'Styrelseprotokoll',
-        'EFL — Lagen om ekonomiska föreningar',
-        'AI-transkribering',
+        'EFL — Lagen om ekonomiska föreningar 2018:672',
+        'AI-transkribering på svenska',
         'BankID-signering',
+        'GDPR-kompatibel datalagring',
       ],
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'hej@minuta.se',
+        contactType: 'customer support',
+        availableLanguage: 'Swedish',
+      },
     },
     {
       '@type': 'WebSite',
       '@id': 'https://minuta.se/#website',
       url: 'https://minuta.se',
       name: 'Minuta',
+      description: 'Automatiserade mötesprotokoll för svenska föreningar',
       inLanguage: 'sv-SE',
       publisher: { '@id': 'https://minuta.se/#org' },
     },
@@ -209,7 +225,10 @@ export default function RootLayout({
   return (
     <html lang="sv" className={`${fraunces.variable} ${dmSans.variable}`}>
       <body className="antialiased bg-parchment text-brand-primary font-sans">
+        <Header />
         {children}
+        <Footer />
+        <CookieBanner />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
